@@ -42,9 +42,9 @@ class SohoaVnexpressNet(scrapy.Spider):
 				
                 # if title and description and url:
                 if description:
-                    self.index += 1
+                    # self.index += 1
                     item = ScraperItem()
-                    item['id'] = str(self.index)
+                    # item['id'] = str(self.index)
                     item['description'] = description
                     # item['title'] = title
                     # item['url'] = url

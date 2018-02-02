@@ -13,6 +13,6 @@ class ScraperItem(scrapy.Item):
     # name = scrapy.Field()
 	# title = scrapy.Field()
 	# url = scrapy.Field()
-	id = scrapy.Field()
+	# id = scrapy.Field()
 	description = scrapy.Field()
 

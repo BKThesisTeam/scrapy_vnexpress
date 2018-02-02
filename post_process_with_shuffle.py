@@ -1,8 +1,10 @@
 import csv
+import random
 
-with open('output.csv','r') as in_file, open('transcript.csv','w') as out_file:
+with open('output.csv','r') as in_file, open('transcript_shuffle.csv','w') as out_file:
     data = in_file.readlines()
     header, rest = data[0], data[1:]
+    random.shuffle(rest)
 
     fieldnames = ['id', 'description']
     writer = csv.DictWriter(out_file, fieldnames=fieldnames)
